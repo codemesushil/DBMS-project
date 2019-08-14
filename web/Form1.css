@@ -1,0 +1,250 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('FormBack.jpg');
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: scroll;
+
+}
+
+
+
+.form-container{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 190%;
+    padding: 40px;
+    background: rgba(255,255,255,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(255,255,255,.5);
+    border-radius: 10px;
+
+
+}
+
+.form-container input[type=text]{
+      
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin: 16px;
+    resize: vertical;
+
+}
+
+
+.form-container input[type=email]{
+      
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin: 16px;
+    resize: vertical;
+
+}
+
+
+
+.form-container textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin: 16px;
+    resize: vertical;
+}
+
+
+.form-container label{
+    width: 100%;
+    padding: 12px;
+    margin: 5px;
+    margin-top: 20px;
+    
+    resize: vertical;
+}
+
+/*Radio*/
+
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #40e0d0;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: 'O';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+
+/*Select*/
+
+.select-style2 {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    display: inline-block;
+
+}
+
+.select-style2 select {
+    padding: 5px;
+    text-align: center;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style2 select:focus {
+    outline: none;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    display: inline-block;
+
+}
+
+.select-style1 {
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    display: inline-block;
+
+}
+
+
+.select-style select {
+    padding: 5px;
+    text-align: center;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+.select-style1 select {
+    padding: 5px;
+    text-align: center;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style1 select:focus {
+    outline: none;
+}
+
+[type="date"] {
+  padding: 5px;
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  height: 38px;
+  width: 165px;
+  text-align: center;
+
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}

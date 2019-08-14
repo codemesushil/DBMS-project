@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reception Form</title>
+	<link rel="stylesheet" type="text/css" href="Form1.css">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+  <link rel="stylesheet" type="text/css" href="Containers.css">
+	
+</head>
+<body>
+       <div class="menu">
+    <a href="">Contact Us</a>
+    <a href="">For Management</a>
+    <a href="">For Customers</a>
+  </div>
+
+
+        
+   
+
+        <form action="ReceiveServlet" method="post" onsubmit="dialog()">
+
+   <div class="form-container" style="top: 105%">
+   <h1 style="text-align: center;">Patient Details</h1>
+   <hr>
+   <br>
+    <div> 
+   		<label for="firstname">First Name</label>
+                <input type="text" name="firstname" pattern="[A-Za-z]+" required>
+	  </div>
+
+	<div>
+		<label for="lastname">Last Name</label>
+                <input type="text" name="lastname" pattern="[A-Za-z]+" required>
+    </div>
+
+    
+    <div >
+    	<div style="float: left; width: 40%;" >
+    	<label for="mobile">Mobile Number</label>
+        <input type="text" name="mobile" pattern="[0-9]{10}" maxlength="10"  required >
+        </div>
+    
+    	<div style="float: right; width: 40%">
+   	    <label for="emobile">Emergency Contact</label>
+            <input type="text" name="emobile" pattern="[0-9]{10}" maxlength="10" required>
+   	    </div>
+    
+    </div>
+
+    <br><br><br><br><br>
+
+  
+    <div style="padding: 10px; transform: translate(5%,0);">
+      <div style="margin: auto;width: 40%;padding: 10px;">
+      <label>
+          <input type="radio" class="option-input radio" name="gender" value="Male"/>
+      Male
+      </label>
+      
+      
+      <label>
+          <input type="radio" class="option-input radio" name="gender" value="Female"/>
+      Female
+      </label>
+      </div>
+    </div>
+
+    
+    <div>
+        <textarea rows="4" id="address" name="address" placeholder="Enter Address" maxlength="100"></textarea>
+    </div>
+    
+    <br>
+    <hr style="color: #fff">
+    
+
+    
+    <br><br>
+    
+    <div style="transform: translate(38%,0);" >
+    
+
+    <div class="select-style1" id="Appointment-select" style="float: left; position: absolute;">
+      <select name="Appointment">
+          <option value="Genral Purpose Checkup">General Purpose Checkup (ENT)</option>
+          <option value="Dental Checkup">Dental Checkup</option>
+          <option value="Optical Checkup">Optical Checkup</option>
+          <option value="Pediatric Checkup">General Purpose Checkup (Child)</option>
+          <option value="Chemotherapy">Chemotherapy</option>
+          <option value="Recovery Therapy">Recovery Therapy</option>
+          <option value="Brain Surgery">Brain Surgery</option>
+          <option value="Skin Checkup">Skin Checkup</option>
+          <option value="Cosmetic Corrective Surgery">Cosmetic Corrective Surgery</option>
+          <option value="Urologist">Urologist</option>
+          <option value="Proctologist">Proctologist</option>
+          <option value="Physiotherapy">Physiotherapy</option>
+          <option value="Blood Report">Blood Report</option>
+      </select>
+    </div>
+    </div>
+
+    <br><br><br><br><hr><br><br>
+
+    <div>
+      <div style=" display: inline-block; width: 20%; margin: auto;float: left;" >
+      <label for="b_group">Blood Group
+           <select name="b_group">
+      	<option value="A+">A+</option>
+      	<option value="A-">A-</option>
+      	<option value="B+">B+</option>
+      	<option value="B-">B-</option>
+      	<option value="AB+">AB+</option>
+      	<option value="AB-">AB-</option>
+      	<option value="O+">O+</option>
+      	<option value="O-">O-</option>
+      </select> 
+      </label>
+      </div>
+
+      
+    
+      <div style="display: inline-block; width: 20%; margin: auto; transform: translate(100%,0);">
+        <label for="height">Height</label>
+        <input type="text" name="height" placeholder="cms" pattern="[0-9]{3}" required>
+        </div>
+
+      <div style="display:inline-block; width: 20%; margin: auto; float: right;">
+        <label for="weight">Weight</label>
+        <input type="text" name="weight" pattern="[0-9]" required>
+        </div>
+    
+    </div>
+    
+    <br><br>
+
+    <div>
+      <div style="transform: translate(28%,0);">
+      <label for="dateofbirth">Date Of Birth</label>
+      <input type="date" name="dateofbirth" id="dateofbirth" required>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div> 
+   		<label for="insuranceno">Insurance number</label>
+                <input type="text" name="insuranceno" maxlength="20" required>
+	</div>
+  
+
+    <br>
+    <hr>
+    <br>
+	<div>
+		<button type="submit" class="button" style="transform: translate(170%, 0);">Admit</button>
+	</div>
+
+
+   </div>
+   </form>
+   </div>
+  </body>
+
+
+</html>

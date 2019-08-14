@@ -1,0 +1,562 @@
+
+body, html{
+    min-height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+	background-image: url('bannerdarken.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+
+
+.nav
+{
+	background-color: #38b278;
+	
+	list-style: none;
+	text-align: right;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0px;
+	
+}
+
+
+
+
+
+.nav a{
+	margin-right: 15px;
+	text-decoration: none;
+    display: block;
+    float: right;
+    text-align: center;
+    padding: 15px 15px;
+	color: #ffffff;
+}
+
+.nav a:hover {
+	background: #1D5C3E;
+}
+
+.nav img{
+	margin: 0px;
+	padding: 3px 3px 3px 3px;
+	border-radius: 100%;
+	background: #38b278;
+    height: 2.5%;
+    width: 2.5%;
+    float: left;
+
+}
+
+.login-container
+{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(29,92,62,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(22,69,46,.5);
+    border-radius: 10px;
+}
+
+.login-container h2{
+
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+
+}
+
+.login-container .inputBox{
+	 position: relative;
+}
+
+.login-container .inputBox input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	border-bottom:1px solid #fff;
+	letter-spacing: 1px;
+}
+
+.login-container .inputBox label{
+    position: absolute;
+  	top: 0;
+ 	left: 0;
+ 	padding: 10px 0;
+ 	font-size: 16px;
+ 	color: #fff;
+ 	pointer-events: none;
+ 	transition: .5s;
+	letter-spacing: 1px;
+}
+
+.login-container .inputBox input:focus ~ label{
+	top: -12px;
+	left: 0;
+	color: #38b278;
+	font-size: 12px;
+}
+
+.login-container .inputBox input:valid ~ label{
+	top: -16px;
+	left: 0;
+	color: #38b278;
+	font-size: 12px;
+}
+
+.login-container input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.login-container input[type="submit"]:hover{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.empty-container{
+	margin: 50px;
+   
+	background: transparent;
+	border: none;
+	border-right: 1px solid #fff;
+	position: absolute;
+	float: left;
+	padding: 70px;
+	top: 25%;
+	left: 5%;
+}
+
+.empty-container a{
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+    display: block;
+    margin: 10px;
+
+}
+
+.empty-container a:hover{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.empty-container input[type="text"]{
+	width: 70%;
+	
+	border: none;
+	border-radius: 2px;
+}
+
+.empty-container input[type="submit"]{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.empty-container input[type="submit"]:hover{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.empty-container1{
+	margin: 50px;
+    
+	background: transparent;
+	border: none;
+	position: absolute;
+	float: left;
+	padding: 70px;
+	top: 40%;
+	left: 50%;
+}
+
+.empty-container1 a{
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	display: block;
+    float: right;
+    margin: 10px;
+
+}
+
+.empty-container1 a:hover{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.information-container{
+    font-size: 22px;
+    width:70%;
+    height:70vh;
+    margin:0 auto;
+    position:absolute;
+    left:20%;
+    top:60%;
+    margin-left:-250px;
+    margin-top:-250px;
+    background: rgba(29,92,62,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(22,69,46,.5);
+    border-radius: 10px;
+}
+
+.information-container input[type="submit"]{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.information-container input[type="submit"]:hover{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.information-container button{
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.information-container button:hover{
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.container1{
+	margin: auto;
+	position: absolute;
+	padding: 10px;
+	border-radius: 5px;
+    top: 20%;
+    left: 42%;
+    background: rgba(29,92,62,.8);
+
+}
+
+.container1 input[type="text"]{
+	border: none;
+	border-radius: 2px;
+	height: 25px;
+	width: 150px;
+	padding: 5px;
+	margin: auto;
+	background: #051900;
+	color: #fff;
+}
+
+.container1 input[type="text"]:focus{
+	outline: none;
+}
+
+.container1 input[type="submit"]{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+
+.container1 input[type="submit"]:hover{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.billcontainer{
+    margin: auto;
+	position: absolute;
+	padding: 10px;
+	border-radius: 5px;
+        height: 800px;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    background: rgba(29,92,62,.8);
+}
+
+.billcontainer h3{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.billcontainer h5{
+	text-align: center;
+	float: right;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.billcontainer table{
+   margin: auto;
+   text-align: center;
+   padding: 5px;
+   width: 100%;
+   border-radius: 5px;
+}
+
+.billcontainer th{
+	width: 50%;
+	padding: 5px;
+   	background: #051900;
+   	color: #fff;
+   	border-radius: 5px;
+   }
+
+ .billcontainer td{
+	padding: 5px;
+   	color: #fff;
+   }
+
+ .billcontainer tr:hover{
+   	background: #2E8B57;
+   }
+  
+.billcontainer .button1{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #38b278;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+.billcontainer .button1:hover{
+    text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #2E8B57;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*select*/
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: DodgerBlue;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+} 
+
+
+
+
+
+/*admin container*/
+
+
+.admincontainer{
+    margin:0px;
+	position: absolute;
+	padding: 2px;
+	border-radius: 5px;
+    top: 40%;
+    left: 0px;
+    width: 100%;
+    background: rgba(29,92,62,.8);
+}
+
+.admincontainer h1{
+	text-align: center;
+	margin: auto;
+	margin: 10px 0 0 0;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.admincontainer h5{
+	text-align: center;
+	float: right;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.admincontainer table{
+   table-layout: fixed;
+   margin: auto;
+   text-align: center;
+   padding: 5px;
+   width: 100%;
+   border-radius: 5px;
+   left: 0px;
+}
+
+.admincontainer th{
+	width: 120px;
+	padding: 5px;
+   	background: #051900;
+   	color: #fff;
+   	border-radius: 5px;
+   }
+
+ .admincontainer td{
+	padding: 5px;
+   	color: #fff;
+        overflow: hidden;
+   }
+
+ .admincontainer tr:hover{
+   	background: #2E8B57;
+   }
+
+
